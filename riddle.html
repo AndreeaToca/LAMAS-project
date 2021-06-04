@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.navbar-ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #050814;
+				font-family: 'Lato', sans-serif;
+			}
+
+			.navbar-li {
+				float: right;
+			}
+
+			.navbar-li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			.navbar-li a:hover {
+				color: #efd091;
+			}
+
+            .container {
+                border: 1px outset #85aac5;
+                
+                text-align: left;
+                width: 50%;
+                margin: auto;
+                padding: 20px;
+                margin-top: 10px;
+                font-family: 'Lato', sans-serif;
+           }
+
+           .section-title  {
+               color: #024f94
+           }
+
+           .members-ul {
+               list-style-image: url('party-hat.png');
+           }
+
+           .riddle-instructions-div {
+               width: 80%;
+               margin: auto;
+               padding: 20px;
+               margin-top: 10px;
+               font-family: 'Lato', sans-serif;
+           }
+
+           .demon-div{
+               width: 95%;
+               margin: auto;
+               padding: 10px;
+               margin-top: 10px;
+               font-family: 'Lato', sans-serif;
+               font-style: italic;
+           }
+
+           .demon-ol {
+               list-style-type: numeric;
+               overflow: hidden;
+           }
+
+           .demon-ul {
+               list-style-image: url('time.png');
+           }
+           
+           #solution-div {
+                width: 100%;
+                padding: 50px 0;
+                margin-top: 20px;
+                display: none;
+            }
+
+            .solution-button {
+                background-color: white; 
+                color: #050814; 
+                border: 2px solid #024f94;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+            .solution-button:hover {
+                background-color: #024f94;
+                color: white;
+            }
+		</style>
+	</head>
+	<body>
+		<ul class = "navbar-ul">
+            <li class = "navbar-li"><a href="./program.html">Program</a></li>
+            <li class = "navbar-li"><a href="./simulation.html">Simulation</a></li>
+            <li class = "navbar-li"><a href="./model.html">Model</a></li>
+            <li class = "navbar-li"><a href="./riddle.html">The Riddle</a></li>
+            <li class = "navbar-li"><a href="./index.html">Introduction</a></li>
+            <li class = "navbar-li" style="float: left;"><a href="./index.html">23-LOGICIANS</a></li>
+		</ul>
+
+		<div class="container">
+            The riddle, called the <span style="color: #024f94;">23-logicians</span>
+            was proposed by Edwin Meyer (<a href="https://www.ted.com/talks/edwin_meyer_can_you_solve_the_logician_s_rave_riddle?language=en">TED-Ed source</a>), 
+            and resemblance other classic,
+
+            epistemic logic puzzles such as Muddy Children problem in Meyerand  
+            van  der  Hoek.
+
+            <h3 class = "section-title">Our Riddle</h3>
+            Each year, thousands of logicians meet up in the desert for 
+            <span style="color: #024f94;">Learning Man</span>, a summer 
+            festival where attendees solve problems together, as well as party. 
+            At the last night of the festival, an exclusive party in the 
+            middle -- the <span style="color: #024f94;">Logician's Rave</span> 
+            -- takes place. To prove they are worthy of entering, anyone who 
+            wishes to join must get past the <span style="color: #024f94;">
+            Demon of Reason</span>: a friendly creature, yet infamous for 
+            its challenging puzzles it gives to anyone wishing to pass. 
+            Only those who manage to solve the demon's puzzle are allowed to 
+            enter. You are visiting <span style="color: #024f94;">Learning Man</span>, 
+            and ask the demon to let you enter; before it lets you do so, he 
+            poses you the following puzzle:
+
+            <br>
+
+            <div class = "riddle-instructions-div"> 
+                23 logician friends of you have already entered the Rave before 
+                you. Before the demon let them in, it placed hats on each of your 
+                friends' heads, and placed the friends in a circle, so they can 
+                face each other, without seeing their own hat. The demon then 
+                explains:
+                <br>
+                <div class = "demon-div">
+                    <ol class = "demon-ol">
+                        <li>Each of you wears a hat of precisely one color</li> <br>
+                        <li>Each of you can see the color of the hats of your friends, but
+                        you may not -- and cannot, by a spell of mine -- see that of your own.</li> <br>
+                        <li>You may not communicate with the others.</li><br>
+                        <li>Once every minute I ask whether anyone that has
+                        figured out their hats' color to step forward and announce it to me; 
+                        If they are correct, I will give them entry to the Rave. 
+                        <span style = "color: #024f94;">If they know their color, they must step up immediately, and not wait for a later minute.</span></li><br>
+                        <li>I selected the hats in such a way, that each
+                        of you will be able to figure out your hats' color at some point.''</li><br>
+                    </ol>
+                </div>
+                Knowing your friends well, you are also confident that your
+                23 logician friends play the game perfectly. The demon 
+                proceeds: <span style = "font-style: italic;">Over the course 
+                of four minutes, the following happened:</span>
+                <ul>
+                    <li class = "demon-ul">After the first minute elapsed, four friends deduced their hat's color.</li>
+                    <li class = "demon-ul">A minute later, multiple other logicians found out their color: red</li>
+                    <li class = "demon-ul">Once minute three passed, nobody new could deduce their mask's color.</li>
+                    <li class = "demon-ul">At the fourth minute, logicians in two colored hats correctly announced their hat's color.''</li>
+                </ul>
+            </div>
+                Now the demon asks you: <span style = "font-style: italic; font-weight: bold; color: #ba7735;">
+                How many logicians entered the Rave at the fifth minute?</span>
+
+            <h3 class = "section-title">Solution</h3>
+            <button class = "solution-button" onclick="myFunction()">Show Solution</button>
+            <div id="solution-div">
+            For this riddle, there is only one possible strategy to win.
+            </div>
+                    
+		</div>
+
+<script>
+	function myFunction() {
+        var x = document.getElementById("solution-div");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+	</body>
+</html>
