@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #050814;
-  font-family: "Monaco", "Courier New", monospace;
-}
+	<head>
+		<style>
+			.navbar-ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #050814;
+				font-family: 'Lato', sans-serif;
+			}
 
-li {
-  float: left;
-}
+			.navbar-li {
+				float: right;
+			}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+			.navbar-li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
 
-li a:hover {
-  background-color: #111;
-}
-</style>
-</head>
-<body>
+			.navbar-li a:hover {
+				color: #efd091;
+			}
 
-<ul>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#riddle">The Riddle</a></li>
-  <li><a href="#solution">Solution</a></li>
-  <li><a href="#model">Model</a></li>
-  <li><a href="#simulation">Simulation</a></li>
-  <li><a href="#program">Program</a></li>
-</ul>
+            .container {
+                border: 1px outset #85aac5;
+                
+                text-align: left;
+                width: 50%;
+                margin: auto;
+                padding: 20px;
+                margin-top: 10px;
+                font-family: 'Lato', sans-serif;
+           }
 
-</body>
+           .section-title{
+               color: #024f94
+           }
+
+           .members-ul {
+               list-style-image: url('party-hat.png');
+           }
+		</style>
+	</head>
+	<body>
+		<ul class = "navbar-ul">
+            <li class = "navbar-li"><a href="./program.html">Program</a></li>
+            <li class = "navbar-li"><a href="./simulation.html">Simulation</a></li>
+            <li class = "navbar-li"><a href="./model.html">Model</a></li>
+            <li class = "navbar-li"><a href="./riddle.html">The Riddle</a></li>
+            <li class = "navbar-li"><a href="./index.html">Introduction</a></li>
+            <li class = "navbar-li" style="float: left;"><a href="./index.html">23-LOGICIANS</a></li>
+		</ul>
+
+        <img src="temporal.jpg" style = "width: 50%; display: block; margin-left: auto; margin-right: auto;">
+
+        <div class="container"> 
+            This website presents the information about the project for the course Multi-Agent Systems course of the Rijksuniversiteit Groningen in the year 2020/2021. We looked at the <span style = "color: #024f94;">"23-logicians"</span> riddle created by Edwin Meyer. We propose the solution using epistemic logic, as well as an application that solves the riddle. 
+
+            <br><br>
+            The members of our group are:
+            <ul class="members-ul">
+                <li>Vlad Iftime</li>
+                <li>Niels de Jong</li>
+                <li>Andreea Toca</li>
+            </ul>
+
+            <h3 class = "section-title"> Introduction </h3>
+            <br>
+            
+        </div>
+
+	</body>
 </html>
